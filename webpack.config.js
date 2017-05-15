@@ -3,7 +3,7 @@ module.exports = {
 
   output: {
     path: __dirname,
-    filename: 'bundle.js'
+    filename: 'bundle.js',
   },
 
   module: {
@@ -12,17 +12,17 @@ module.exports = {
       exclude: /node_modules/,
       loader: 'babel',
       query: {
-        presets: ['react', 'es2015']
-      }
-    }]
+        presets: ['react', 'es2015'],
+      },
+    }],
   },
 
   resolveLoader: {
-    moduleExtensions: ['-loader']
+    moduleExtensions: ['-loader'],
   },
 
   devServer: {
     contentBase: './',
-    port: 8080
-  }
+    port: 8080,
+  },
 };
