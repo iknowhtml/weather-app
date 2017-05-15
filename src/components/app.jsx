@@ -1,8 +1,10 @@
 import React from 'react';
 
+import SearchBar from '../containers/search_bar';
+
 const App = () => (
   <div>
-    This is a React & Redux project.
+    <SearchBar />
   </div>
 );
 

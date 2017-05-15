@@ -1,5 +1,5 @@
 module.exports = {
-  entry: './src/index.js',
+  entry: './src/index.jsx',
 
   output: {
     path: __dirname,
@@ -7,16 +7,20 @@ module.exports = {
   },
 
   module: {
-    loaders: [{
-      test: /\.js$/,
-      exclude: /node_modules/,
-      loader: 'babel',
-      query: {
-        presets: ['react', 'es2015'],
+    loaders: [
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        loader: 'babel',
+        query: {
+          presets: ['react', 'es2015'],
+        },
       },
-    }],
+    ],
   },
-
+  resolve: {
+    extensions: ['.js', '.jsx'],
+  },
   resolveLoader: {
     moduleExtensions: ['-loader'],
   },
