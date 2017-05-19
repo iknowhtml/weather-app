@@ -1,12 +1,12 @@
-# React Redux Template
-A basic template for a React & Redux application.
+# Weather Application
+A simple weather application built with React and Redux. 
 
 #### To use
 Checkout this repo, install dependencies, then run the following commands in the terminal.
 
 ```
-> git clone https://github.com/iknowhtml/react-redux-template.git
-> cd react-redux-template
+> git clone https://github.com/iknowhtml/weather-app.git
+> cd weather-app
 > yarn install
 > yarn start
 ```
